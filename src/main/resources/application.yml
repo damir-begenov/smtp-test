@@ -1,8 +1,8 @@
 spring:
     datasource:
-        url: jdbc:postgresql://localhost:5432/oauth2
-        username: postgres
-        password: "0000"
+        url: jdbc:postgresql://ec2-34-202-127-5.compute-1.amazonaws.com:5432/dfmfc5upmcgn58
+        username: dclzzgelxtnsqh
+        password: f67fac2597b48a05e6df5879a0084389fa94a73a2afd53799032a73a1ed9cc43
     jpa:
         show-sql: true
         hibernate:

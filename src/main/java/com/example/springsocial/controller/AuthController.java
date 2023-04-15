@@ -158,7 +158,7 @@ public class AuthController {
         helper.setSubject(subject);
 
         content = content.replace("[[name]]", user.getName());
-        String verifyURL = "localhost:8080/auth" + "/verify?code=" + user.getVerificationCode();
+        String verifyURL = "https://smtp-test.herokuapp.com" + "/verify?code=" + user.getVerificationCode();
         content = content.replace("[[URL]]", verifyURL);
         helper.setText(content, true);
         mailSender.send(message);
