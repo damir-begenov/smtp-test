@@ -146,7 +146,7 @@ public class AuthController {
     }
     private void sendVerificationEmail(User user, String siteURL) throws MessagingException, UnsupportedEncodingException {
         String toAddress = user.getEmail();
-        String fromAddress = "damir.ps04@gmail.com";
+        String fromAddress = "dam@gmail.com";
         String senderName = "damirCO";
         String subject = "Please verify your registration";
         String content = "Dear [[name]],<br>" + "Please click the link below to verify your registration:<br>" +"<h3><a href=\"[[URL]]\" target=\"_self\">[[URL]]</a></h3>" + "Thank you,<br>"
